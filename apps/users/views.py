@@ -9,7 +9,7 @@ from rest_framework import viewsets
 from .serializers import SmsSerializer,UserRegSerializer,UserDetailSerializer
 from rest_framework.response import Response
 from rest_framework import status
-from utils.yunpian import YunPian
+#from utils.yunpian import YunPian
 from MxShop.settings import APIKEY
 from random import choice
 from .models import VerifyCode

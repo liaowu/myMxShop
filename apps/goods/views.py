@@ -46,13 +46,14 @@ class GoodsListViewSet(CacheResponseMixin,mixins.ListModelMixin, mixins.Retrieve
     pagination_class = GoodsPagination
     #序列化
     serializer_class = GoodsSerializer
-    filter_backends = (DjangoFilterBackend,filters.SearchFilter,filters.OrderingFilter)
+#    filter_backends = (DjangoFilterBackend,filters.SearchFilter,filters.OrderingFilter)
+#    filter_backends = (DjangoFilterBackend)
 
     # 设置filter的类为我们自定义的类
     #过滤
     filter_class = GoodsFilter
     #搜索
-    search_fields = ('name', 'goods_brief', 'goods_desc')
+    search_fields = ('name','goods_brief', 'goods_desc')
     #排序
     ordering_fields = ('sold_num', 'shop_price')
 

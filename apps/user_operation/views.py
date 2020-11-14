@@ -15,7 +15,7 @@ class UserFavViewset(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Crea
     '''
     #permission是用来做权限判断的
     # IsAuthenticated：必须登录用户；IsOwnerOrReadOnly：必须是当前登录的用户
-    permission_classes = (IsAuthenticated,IsOwnerOrReadOnly)
+    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
     #auth使用来做用户认证的
     authentication_classes = (JSONWebTokenAuthentication,SessionAuthentication)
     #搜索的字段

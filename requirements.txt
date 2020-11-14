@@ -22,7 +22,7 @@ djangorestframework==3.12.1
 djangorestframework-jwt==1.11.0
 djangorestframework-jwt-proxy==0.1
 DjangoUeditor==1.8.143
-drf-extensions==0.6.0
+drf-extensions @ git+git://github.com/chibisov/drf-extensions.git@8001a440c7322be26bbe2d16f3a334a8b0b5860b
 et-xmlfile==1.0.1
 future==0.18.2
 httplib2==0.9.2
