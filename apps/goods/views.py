@@ -47,7 +47,8 @@ class GoodsListViewSet(CacheResponseMixin,mixins.ListModelMixin, mixins.Retrieve
     #序列化
     serializer_class = GoodsSerializer
 #    filter_backends = (DjangoFilterBackend,filters.SearchFilter,filters.OrderingFilter)
-#    filter_backends = (DjangoFilterBackend)
+#    filter_backends = (DjangoFilterBackend,filters.SearchFilter,)
+    filter_backends = [DjangoFilterBackend]
 
     # 设置filter的类为我们自定义的类
     #过滤

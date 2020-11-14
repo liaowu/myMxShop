@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework.authtoken',
     'users',
     'goods',
     'trade',
@@ -51,13 +50,13 @@ INSTALLED_APPS = [
     'rest_framework',
     #'xadmin',
     'crispy_forms',
-#    'DjangoUeditor',
-#    'django_filters',
-#    'corsheaders',
-#    'reversion',
-#    'coreschema',
-#    'rest_framework.authtoken',
-#    'social_django',
+    'DjangoUeditor3',
+    'django_filters',
+    'corsheaders',
+    'reversion',
+    'coreschema',
+    'rest_framework.authtoken',
+    'social_django',
 ]
 
 
@@ -73,7 +72,8 @@ MIDDLEWARE = [
 ]
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
-    'localhost:8000',
+#    'http://localhost:3000',    
+    'http://localhost:8000',
 )
 
 ROOT_URLCONF = 'MxShop.urls'
